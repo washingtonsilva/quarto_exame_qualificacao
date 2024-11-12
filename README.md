@@ -1,8 +1,8 @@
 # Template para Exame de Qualificação - IFMG
 
 Template em Quarto para elaboração do documento de Exame de 
-Qualificação do Mestrado Profissional em Administração do IFMG - 
-Campus Formiga.
+Qualificação do [Mestrado Profissional em Administração do IFMG - 
+Campus Formiga](https://www.formiga.ifmg.edu.br/mestrado).
 
 ## Estrutura do Projeto
 
