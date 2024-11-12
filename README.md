@@ -38,7 +38,8 @@ estilo ABNT 2023.
 
 ### Gerando o PDF
 
-Clique em `Render` ou utilize o terminal
+No RStudio clique em `Render`. No RStudio e nos demais 
+editores, podemos usar o terminal também:
 
 ```bash
 quarto render exame_qualificacao.qmd
