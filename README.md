@@ -24,7 +24,7 @@ estilo ABNT 2023.
 ### Pré-requisitos
 
 - Quarto (versão mais recente)
-- Editor de texto (RStudio)
+- Editor de texto (RStudio, Visual Studio Code, Positron)
 - Sistema TeX instalado (tinytex recomendado)
 - linguagem R ou Python instaladas.
 
