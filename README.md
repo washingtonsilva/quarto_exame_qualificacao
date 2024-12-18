@@ -1,4 +1,4 @@
-# Template para Exame de Qualificação - IFMG
+# Template para Exame de Qualificação
 
 Template em Quarto para elaboração do documento de Exame de 
 Qualificação do [Mestrado Profissional em Administração do IFMG - 
