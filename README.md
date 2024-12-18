@@ -63,6 +63,10 @@ O template gera um documento PDF com a seguinte estrutura:
 - Referências
 - Apêndices
 
+[![Visualizar PDF](https://img.shields.io/badge/Visualizar%20PDF-clique%20aqui-blue)](https://docs.google.com/viewer?url=https://github.com/washingtonsilva/quarto_exame_qualificacao/blob/eb154472db40b8913246a166ab4dc33439d654da/exame_qualificacao.pdf
+)
+
+
 ## Personalização
 
 ### Capa e Elementos Pré-textuais
