@@ -10,7 +10,7 @@ O template é composto pelos seguintes arquivos:
 
 - `exame_qualificacao.qmd`: Arquivo Quarto (`.qmd`) contendo a 
 estrutura lógica do documento. O conteúdo do projeto deve ser 
-redigigo neste arquivo.x
+redigido neste arquivo.
 
 - `pre_textuais.tex`: Template LaTeX para geração da capa, resumo e 
 outras configurações básicas.
