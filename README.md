@@ -65,7 +65,7 @@ O template gera um documento PDF com a seguinte estrutura:
 
 [Template](./exame_qualificacao.pdf)
 
-[Nome do PDF](https://docs.google.com/viewer?url=https://github.com/washingtonsilva/quarto_exame_qualificacao/blob/main/exame_qualificacao.pdf)
+[Template](https://docs.google.com/viewer?url=https://github.com/washingtonsilva/quarto_exame_qualificacao/blob/main/exame_qualificacao.pdf)
 
 
 ## Personalização
