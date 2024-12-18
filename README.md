@@ -1,5 +1,8 @@
 
-![](logo.jpeg){width=50%}
+<div style="width: 50%">
+    ![](logo.jpeg)
+</div>
+
 
 # Template para Exame de Qualificação
 
