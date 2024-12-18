@@ -63,9 +63,7 @@ O template gera um documento PDF com a seguinte estrutura:
 - Referências
 - Apêndices
 
-[Template](./exame_qualificacao.pdf)
-
-<embed src="https://raw.githubusercontent.com/washingtonsilva/quarto_exame_qualificacao/main/exame_qualificacao.pdf" width="600" height="500" type="application/pdf">
+<embed src="./exame_qualificacao.pdf" width="600" height="500" type="application/pdf">
 
 
 ## Personalização
