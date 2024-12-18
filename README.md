@@ -65,7 +65,7 @@ O template gera um documento PDF com a seguinte estrutura:
 
 [Template](./exame_qualificacao.pdf)
 
-<object data="https://raw.githubusercontent.com/washingtonsilva/quarto_exame_qualificacao/main/exame_qualificacao.pdf" type="application/pdf" width="600" height="500"> </object>
+<embed src="https://raw.githubusercontent.com/washingtonsilva/quarto_exame_qualificacao/main/exame_qualificacao.pdf" width="600" height="500" type="application/pdf">
 
 
 ## Personalização
