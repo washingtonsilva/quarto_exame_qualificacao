@@ -6,7 +6,7 @@ Campus Formiga](https://www.formiga.ifmg.edu.br/mestrado).
 
 ## Estrutura do Projeto
 
-O template contém os seguintes arquivos essenciais[2]:
+O template é composto pelos seguintes arquivos:
 
 - `exame_qualificacao.qmd`: Arquivo principal do Quarto contendo a 
 estrutura lógica do documento.
@@ -47,7 +47,7 @@ quarto render exame_qualificacao.qmd
 
 ## Estrutura do Documento
 
-O template gera um documento PDF com a seguinte estrutura[3]:
+O template gera um documento PDF com a seguinte estrutura:
 
 - Capa (personalizada para o IFMG)
 - Resumo
