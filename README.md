@@ -63,7 +63,7 @@ O template gera um documento PDF com a seguinte estrutura:
 - Resultados Esperados
 - Cronograma
 - Referências
-- Apêndices
+- Apêndices (opcional)
 
 
 
