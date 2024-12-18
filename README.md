@@ -8,16 +8,17 @@ Campus Formiga](https://www.formiga.ifmg.edu.br/mestrado).
 
 O template é composto pelos seguintes arquivos:
 
-- `exame_qualificacao.qmd`: Arquivo principal do Quarto contendo a 
-estrutura lógica do documento.
+- `exame_qualificacao.qmd`: Arquivo Quarto (`.qmd`) contendo a 
+estrutura lógica do documento. O conteúdo do projeto deve ser 
+redigigo neste arquivo.x
 
-- `pre_textuais.tex`: Template LaTeX para geração da capa e resumo.
+- `pre_textuais.tex`: Template LaTeX para geração da capa, resumo e 
+outras configurações básicas.
 
-- `referencias.bibtex`: Arquivo para gerenciamento das 
-referências bibliográficas.
+- `referencias.bibtex`: Arquivo contendo as referências bibliográficas.
 
-- `associacao-brasileira-de-normas-tecnicas-ipea.csl`: Arquivo de 
-estilo ABNT 2023.
+- `associacao-brasileira-de-normas-tecnicas-ipea.csl`: Arquivo contendo o 
+estilo definido pela norma ABNT 2023.
 
 ## Como Usar
 
