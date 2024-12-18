@@ -1,3 +1,6 @@
+
+![](logo.jpeg)
+
 # Template para Exame de Qualificação
 
 Template em Quarto para elaboração do documento de Exame de 
