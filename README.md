@@ -48,6 +48,8 @@ quarto render exame_qualificacao.qmd
 
 ## Estrutura do Documento
 
+[![Visualizar PDF](https://img.shields.io/badge/Visualizar%20PDF-clique%20aqui-blue)](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/washingtonsilva/quarto_exame_qualificacao/main/exame_qualificacao.pdf)
+
 O template gera um documento PDF com a seguinte estrutura:
 
 - Capa (personalizada para o IFMG)
@@ -63,7 +65,6 @@ O template gera um documento PDF com a seguinte estrutura:
 - Referências
 - Apêndices
 
-[![Visualizar PDF](https://img.shields.io/badge/Visualizar%20PDF-clique%20aqui-blue)](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/washingtonsilva/quarto_exame_qualificacao/main/exame_qualificacao.pdf)
 
 
 
