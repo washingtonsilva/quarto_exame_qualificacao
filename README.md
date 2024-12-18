@@ -63,7 +63,7 @@ O template gera um documento PDF com a seguinte estrutura:
 - Referências
 - Apêndices
 
-<embed src="./exame_qualificacao.pdf" width="600" height="500" type="application/pdf">
+<embed src="exame_qualificacao.pdf" width="600" height="500" type="application/pdf">
 
 
 ## Personalização
