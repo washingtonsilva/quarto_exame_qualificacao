@@ -24,8 +24,8 @@ format:
     number-sections: true
     fig-cap-location: bottom
     tbl-cap-location: top
-    lof: false
-    lot: false
+    lof: true
+    lot: true
 bibliography: referencias.bibtex
 csl: associacao-brasileira-de-normas-tecnicas-ipea.csl
 editor: source
@@ -63,7 +63,7 @@ Descrição da metodologia...
 
 # Resultados Esperados
 
-Apresentação e discussão dos resultados...
+
 
 
 
