@@ -72,10 +72,7 @@ Terceira seção a ser escrita.
 
 Primeira seção a ser escrita.
 
-Citações podem ser feitas com: @cruz_gonzalez_2017 estudaram. 
-
-Ou após escrever um parágrafo [@cruz_gonzalez_2017], sendo que 
-outras citações podem ser incluídas após uma vírgula.
+Exemplo de citação: @cruz_gonzalez_2017
 
 
 
@@ -83,12 +80,12 @@ outras citações podem ser incluídas após uma vírgula.
 
 # Metodologia {#sec-metodologia}
 
-Descrição da metodologia...
+Quarta seção a ser escrita
 
 
 ## Dados
 
-Descrição dos dados que serão utilizados...
+Descrição precisa dos dados que serão utilizados...
 
 
 
@@ -96,13 +93,14 @@ Descrição dos dados que serão utilizados...
 
 # Resultados Esperados {#sec-esperados}
 
-Quarta seção a ser escrita.
+Quinta seção a ser escrita.
 
 
 
 # Cronograma {#sec-cronograma}
 
-Quinta seção a ser escrita.
+Sexta seção a ser criada, basta editar o código com as tarefas 
+e datas iniciais e finais no código do gráfio a seguir.
 
 
 ```{r}
