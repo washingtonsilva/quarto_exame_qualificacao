@@ -29,20 +29,14 @@ Para utilizar este template, você precisará ter instalado:
 
 ### Começando com o Template
 
-#### Opção 1: Usar o GitHub (Recomendado)
+#### Usar o GitHub
 
 1. Na página principal deste repositório, clique no botão verde "**Use this template**"
 2. Selecione "**Create a new repository**"
 3. Dê um nome para seu repositório (por exemplo, `exame_qualificacao_seunome`)
 4. Clique em "**Create repository**"
 
-#### Opção 2: Download Direto
 
-Se preferir não usar o GitHub, você pode:
-
-1. Clicar no botão verde "**Code**"
-2. Selecionar "**Download ZIP**"
-3. Extrair os arquivos para o diretório desejado em seu computador
 
 ### Trabalhando com o Template
 
