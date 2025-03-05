@@ -1,64 +1,110 @@
-
 # Template para Exame de Qualificação
 
 [![Visualizar PDF](https://img.shields.io/badge/Visualizar%20PDF-clique%20aqui-blue)](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/washingtonsilva/quarto_exame_qualificacao/main/exame_qualificacao.pdf)
 
-Template em Quarto para elaboração do documento de Exame de 
-Qualificação do [Mestrado Profissional em Administração do IFMG - 
-Campus Formiga](https://www.formiga.ifmg.edu.br/mestrado).
+Template em Quarto para elaboração do documento de Exame de Qualificação do [Mestrado Profissional em Administração do IFMG - Campus Formiga](https://www.formiga.ifmg.edu.br/mestrado).
 
 ## Estrutura do Projeto
 
 O template é composto pelos seguintes arquivos:
 
-- `exame_qualificacao.qmd`: Arquivo Quarto (`.qmd`) contendo a 
-estrutura lógica do documento. O conteúdo do projeto deve ser 
-redigido neste arquivo.
+- `exame_qualificacao.qmd`: Arquivo principal em formato Quarto onde você irá redigir o conteúdo do seu documento.
 
-- `pre_textuais.tex`: Template LaTeX para geração da capa, resumo e 
-outras configurações básicas.
+- `pre_textuais.tex`: Arquivo LaTeX para personalização da capa, resumo e outras configurações.
 
-- `referencias.bibtex`: Arquivo contendo as referências bibliográficas.
+- `referencias.bibtex`: Arquivo para gerenciar suas referências bibliográficas.
 
-- `associacao-brasileira-de-normas-tecnicas-ipea.csl`: Arquivo contendo o 
-estilo definido pela norma ABNT 2023.
+- `associacao-brasileira-de-normas-tecnicas-ipea.csl`: Arquivo de estilo para formatação das citações conforme ABNT 2023.
 
 ## Como Usar
 
 ### Pré-requisitos
 
-- Quarto (versão mais recente)
-- Editor de texto (RStudio, Visual Studio Code, Positron)
-- Sistema TeX instalado (tinytex recomendado)
-- linguagem R ou Python instaladas.
+Para utilizar este template, você precisará ter instalado:
 
-### Utilizando o Template
+- [Quarto](https://quarto.org/docs/download/) (versão mais recente)
+- Um editor de texto ([RStudio](https://posit.co/download/rstudio-desktop/), [VS Code](https://code.visualstudio.com/) ou [Positron](https://posit.co/blog/announcing-positron/))
+- [TinyTeX](https://quarto.org/docs/output-formats/pdf-basics.html#installing-tex) (sistema TeX simplificado recomendado)
+- R ou Python (para códigos e análises, se necessário)
 
-1. Clique no botão "Use this template" no topo da página
-2. Clone o novo repositório criado
-3. Edite o arquivo `exame_qualificacao.qmd` com seu conteúdo
-4. Personalize o arquivo `pre_textuais.tex` com suas informações
-5. Adicione suas referências no arquivo `referencias.bibtex`
+### Começando com o Template
 
-### Gerando o PDF
+#### Opção 1: Usar o GitHub (Recomendado)
 
-No RStudio clique em `Render`. No RStudio e nos demais 
-editores, podemos usar o terminal também:
+1. Na página principal deste repositório, clique no botão verde "**Use this template**"
+2. Selecione "**Create a new repository**"
+3. Dê um nome para seu repositório (por exemplo, `exame_qualificacao_seunome`)
+4. Clique em "**Create repository**"
 
+#### Opção 2: Download Direto
+
+Se preferir não usar o GitHub, você pode:
+
+1. Clicar no botão verde "**Code**"
+2. Selecionar "**Download ZIP**"
+3. Extrair os arquivos para o diretório desejado em seu computador
+
+### Trabalhando com o Template
+
+#### No RStudio (Recomendado para iniciantes)
+
+1. **Para repositórios GitHub:**
+
+   - Abra o RStudio
+   - Selecione **File → New Project → Version Control → Git**
+   - Cole a URL do seu repositório (https://github.com/seu-usuario/exame_qualificacao_seunome.git)
+   - Escolha o diretório onde deseja salvar o projeto
+   - Clique em "**Create Project**"
+
+2. **Para downloads diretos:**
+
+   - Abra o RStudio
+   - Selecione **File → New Project → Existing Directory**
+   - Navegue até a pasta onde extraiu os arquivos
+   - Clique em "**Create Project**"
+
+#### Editando o Documento
+
+1. Abra o arquivo `exame_qualificacao.qmd` no RStudio
+2. Personalize e edite seguindo as instruções incluídas no template
+3. Para personalizar a capa e informações pré-textuais, edite o arquivo `pre_textuais.tex`
+4. Gerencie suas referências no arquivo `referencias.bibtex`
+
+#### Gerando o PDF
+
+No RStudio:
+- Clique no botão "**Render**" no topo do editor
+
+Ou use o terminal:
 ```bash
 quarto render exame_qualificacao.qmd
 ```
 
+### Compartilhando com seu Orientador
+
+#### Se estiver usando GitHub:
+
+1. Acesse seu repositório no GitHub
+2. Vá em **Settings → Collaborators**
+3. Clique em "**Add people**"
+4. Digite o nome de usuário ou e-mail do orientador
+5. Defina o nível de acesso como "**Write**" ou "**Maintain**"
+
+#### Se não estiver usando GitHub:
+
+- Compartilhe os arquivos por e-mail ou outra plataforma de sua preferência
+- Envie tanto os arquivos fonte (.qmd, .tex, .bibtex) quanto o PDF gerado
+
 ## Estrutura do Documento
 
-O template gera um documento PDF com a seguinte estrutura:
+O template gera um documento PDF com a seguinte estrutura, de acordo com as normas da ABNT:
 
-- Capa (personalizada para o IFMG)
-- Resumo
-- Sumário
+- Capa personalizada para o IFMG
+- Resumo e palavras-chave
+- Sumário gerado automaticamente
 - Introdução
-  - Justificativa
-  - Objetivos
+- Justificativa
+- Objetivos (Geral e Específicos)
 - Revisão de Literatura
 - Metodologia
 - Resultados Esperados
@@ -66,86 +112,22 @@ O template gera um documento PDF com a seguinte estrutura:
 - Referências
 - Apêndices (opcional)
 
+## Dicas de Uso
 
+- **Citações**: Use o formato `@sobrenome2023` para citações no texto
+- **Seções**: Use `#` para título de seção, `##` para subseção, etc.
+- **Imagens**: Use `![Legenda](caminho/para/imagem.png)` para incluir imagens
+- **Tabelas**: Utilize os recursos de tabela do Quarto ou insira código R/Python para gerar tabelas
+- **Referência cruzada**: Adicione `{#sec-nome}` aos títulos e use `@sec-nome` para referenciá-los
 
+## Suporte
 
-## Personalização
+Em caso de dúvidas:
 
-### Capa e Elementos Pré-textuais
-
-Para personalizar a capa e o resumo, edite o arquivo 
-`pre_textuais.tex` alterando:
-
-- Nome do autor
-- Título e subtítulo
-- Orientador e coorientador
-- Linha de pesquisa
-- Texto do resumo
-- Palavras-chave
-
-### Formatação
-
-O documento está configurado com:
-
-- Papel A4
-- Margens: superior 3cm, inferior 2cm, esquerda 3cm, direita 2cm
-- Fonte tamanho 12pt
-- Espaçamento entre linhas 1.25
-- Parágrafos indentados
-- Numeração automática de seções
+- Consulte a [documentação do Quarto](https://quarto.org/docs/guide/)
+- Entre em contato com seu orientador
+- Abra uma issue neste repositório
 
 ## Licença
 
 Este template está sob a licença MIT.
-
-## Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para:
-
-- Reportar bugs
-- Sugerir melhorias
-- Enviar pull requests
-
-## Atualizações e Versões
-
-Este template está em desenvolvimento contínuo para garantir 
-conformidade com as normas mais recentes e melhorar a 
-experiência dos mestrandos.
-
-### Como se Manter Atualizado
-
-- **Observando o Repositório**: Clique no botão "Watch" no topo 
-da página para receber notificações sobre novas versões e atualizações.
-
-- **Verificando Releases**: Novas versões serão publicadas como 
-releases no GitHub, incluindo notas detalhadas sobre as mudanças.
-
-### Atualizando Seu Projeto
-
-Se você já está usando o template, há duas opções para atualização:
-
-1. **Para Projetos Novos**:
-
-   - Sempre utilize a versão mais recente do template através 
-   do botão "Use this template"
-
-
-2. **Para Projetos em Andamento**:
-   - Você pode sincronizar seu repositório com o template original
-   - Alternativamente, pode aplicar manualmente as alterações 
-     consultando o histórico de mudanças
-
-### Changelog
-
-Mantenha-se informado sobre as alterações consultando:
-
-- O arquivo CHANGELOG.md no repositório
-- A seção de Releases no GitHub
-- As discussões e issues relacionadas a atualizações
-
-## Suporte
-
-Em caso de dúvidas ou problemas, abra uma issue no repositório.
-
-
-
