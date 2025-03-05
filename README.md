@@ -56,12 +56,6 @@ Se preferir não usar o GitHub, você pode:
    - Escolha o diretório onde deseja salvar o projeto
    - Clique em "**Create Project**"
 
-2. **Para downloads diretos:**
-
-   - Abra o RStudio
-   - Selecione **File → New Project → Existing Directory**
-   - Navegue até a pasta onde extraiu os arquivos
-   - Clique em "**Create Project**"
 
 #### Editando o Documento
 
@@ -73,27 +67,26 @@ Se preferir não usar o GitHub, você pode:
 #### Gerando o PDF
 
 No RStudio:
+
 - Clique no botão "**Render**" no topo do editor
 
 Ou use o terminal:
+
 ```bash
 quarto render exame_qualificacao.qmd
 ```
 
 ### Compartilhando com seu Orientador
 
-#### Se estiver usando GitHub:
+#### Usando o GitHub:
 
 1. Acesse seu repositório no GitHub
 2. Vá em **Settings → Collaborators**
 3. Clique em "**Add people**"
 4. Digite o nome de usuário ou e-mail do orientador
 5. Defina o nível de acesso como "**Write**" ou "**Maintain**"
+6. O orientador deverá aceitar o convite para colaborar.
 
-#### Se não estiver usando GitHub:
-
-- Compartilhe os arquivos por e-mail ou outra plataforma de sua preferência
-- Envie tanto os arquivos fonte (.qmd, .tex, .bibtex) quanto o PDF gerado
 
 ## Estrutura do Documento
 
