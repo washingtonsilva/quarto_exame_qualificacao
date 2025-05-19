@@ -27,6 +27,7 @@ format:
     tbl-cap-location: top
     lof: false
     lot: false
+    link-citations: true
 execute: 
   echo: false
   warning: false
