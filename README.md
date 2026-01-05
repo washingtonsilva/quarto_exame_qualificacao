@@ -1,12 +1,11 @@
 # Template para Exame de Qualificação
 
-Template em **Quarto** para elaboração do documento de **Exame de Qualificação**
-do **Mestrado Profissional em Administração do IFMG – Campus Formiga**  
-https://www.formiga.ifmg.edu.br/mestrado
+Template **Quarto** para elaboração do documento necessário para o **Exame de Qualificação**
+do [**Mestrado Profissional em Administração do IFMG – Campus Formiga**](https://www.formiga.ifmg.edu.br/mestrado)
 
 Este repositório disponibiliza **apenas os arquivos-fonte** do documento.
-O arquivo PDF final é **gerado localmente** pelo orientando e **não é versionado
-no GitHub**.
+O arquivo PDF final é **gerado localmente** pelo orientando e 
+**não deve ser versionado com Git/GitHub**.
 
 
 ## Caminho rápido 
