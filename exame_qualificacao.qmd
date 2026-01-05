@@ -8,6 +8,8 @@ format:
       - text: |
           \usepackage{indentfirst}
           \usepackage{microtype}
+          \usepackage{titlesec}
+          \usepackage{ragged2e}
     documentclass: report
     papersize: a4
     geometry:
