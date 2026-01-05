@@ -1,20 +1,4 @@
-O arquivo .gitignore atual do repositório do template contém apenas o 
-seguinte:
 
-```
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-.DS_Store
-
-```
-
-Como eu utilizo um macbook air m1 e meus orientandos utilizam essencialmente 
-Windows, pretendo substituir o .gitignore atual pelo seguinte conteúdo 
-mais completo e adequado para ambos os sistemas operacionais:
-
-```
 # Arquivos de sistema do Windows
 Thumbs.db
 Desktop.ini
@@ -42,8 +26,3 @@ Desktop.ini
 .~lock.*
 *.tmp
 *.bak
-```
-
-Se considerar adequado, como devo proceder para remover o pdf 
-que já está sendo rastreado pelo git e adicionar o novo .gitignore ao 
-repositório?
