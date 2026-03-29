@@ -1,15 +1,39 @@
 ---
-lang: pt
+lang: pt-BR
 format:
   pdf:
-    include-before-body:
-      - file: pre_textuais.tex
+    pdf-engine: xelatex
     include-in-header:
+      - file: pre_textuais.tex
       - text: |
           \usepackage{indentfirst}
           \usepackage{microtype}
-          \usepackage{titlesec}
-          \usepackage{ragged2e}
+          % ==========================
+          % DADOS EDITÁVEIS DO EXAME
+          % Edite apenas o texto entre chaves.
+          % Não altere os nomes dos comandos.
+          % Exemplo: troque "Nome Completo do Discente"
+          % pelo nome real do discente.
+          %
+          % Se não houver subtítulo ou coorientador(a),
+          % deixe o campo vazio entre chaves.
+          %
+          % Evite usar os caracteres %, &, # e _
+          % nesses campos editáveis.
+          % ==========================
+          \newcommand{\InstituicaoExameQualificacao}{Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais}
+          \newcommand{\CampusExameQualificacao}{Campus Formiga}
+          \newcommand{\ProgramaExameQualificacao}{Mestrado Profissional em Administração}
+          \newcommand{\NomeAutorExameQualificacao}{Nome Completo do Discente}
+          \newcommand{\TituloExameQualificacao}{Título do Projeto de Pesquisa}
+          \newcommand{\SubtituloExameQualificacao}{}
+          \newcommand{\CidadeExameQualificacao}{Formiga}
+          \newcommand{\EstadoExameQualificacao}{MG}
+          \newcommand{\AnoExameQualificacao}{2026}
+          \newcommand{\OrientadorExameQualificacao}{Prof. Dr. Nome Completo do Orientador}
+          \newcommand{\CoorientadorExameQualificacao}{}
+          \newcommand{\LinhaPesquisaExameQualificacao}{Finanças Corporativas e Investimentos}
+          \newcommand{\TextoApresentacaoExameQualificacao}{Projeto de pesquisa apresentado ao Programa de Pós-Graduação em Administração do Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais (IFMG) -- Campus Formiga, como requisito para o Exame de Qualificação do Mestrado Profissional em Administração.}
     documentclass: report
     papersize: a4
     geometry:
@@ -20,181 +44,201 @@ format:
     fontsize: 12pt
     linestretch: 1.25
     indent: true
-    toc: true
-    toc-title: Sumário
-    toc-depth: 3
+    toc: false
     number-sections: true
     fig-dpi: 300
     fig-cap-location: bottom
     tbl-cap-location: top
-    lof: false
-    lot: false
     link-citations: true
-execute: 
+execute:
   echo: false
   warning: false
   message: false
 crossref:
-  fig-prefix: 'Fig.'
-  tbl-prefix: 'Tab.'
-bibliography: referencias.bibtex
+  fig-prefix: "Fig."
+  tbl-prefix: "Tab."
+bibliography: referencias.bib
 csl: associacao-brasileira-de-normas-tecnicas-ipea.csl
 editor: source
 ---
 
+<!--
+Edite primeiro os campos do bloco "DADOS EDITÁVEIS DO EXAME" no topo deste arquivo.
+Na maior parte do tempo, você precisará alterar apenas este arquivo.
+-->
+
+\pagenumbering{gobble}
+
+\capaExameQualificacao
+
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\pagestyle{empty}
+
+\folhaDeRostoExameQualificacao
+
+<!--
+Listas opcionais.
+Descomente as linhas abaixo apenas se houver figuras ou tabelas no projeto.
+-->
+
+<!--
+\inserirListaDeFigurasExameQualificacao
+
+\inserirListaDeTabelasExameQualificacao
+-->
+
+\inserirSumarioExameQualificacao
+
+\clearpage
+\pagestyle{textualexamequalificacao}
+
+
+
+<!--
+Escreva abaixo o texto do projeto de pesquisa.
+A sequência proposta busca manter o template aderente à NBR 15287 e ao
+processo de qualificação do PPGA, sem exigir complexidades extras.
+-->
+
+
 
 # Introdução {#sec-introducao}
 
-Sexta e última seção a ser escrita.
+Apresente o tema do projeto, o contexto em que o problema surge e a relevância
+geral da pesquisa.
+
+
+## Problema de pesquisa {#sec-problema}
+
+Formule de maneira clara a pergunta que a pesquisa pretende responder.
+
+
+## Hipóteses ou pressupostos {#sec-hipoteses}
+
+Se a sua pesquisa não trabalhar com hipóteses ou pressupostos, apague esta
+subseção inteira, incluindo o título.
+
+
+## Objetivo geral {#sec-objgeral}
+
+Declare aqui o objetivo geral do projeto.
+
+
+## Objetivos específicos {#sec-objespecificos}
+
+Liste aqui os objetivos específicos que viabilizam o alcance do objetivo geral.
+Se desejar, escreva cada objetivo iniciando com um verbo no infinitivo.
+
+1. Primeiro objetivo específico.
+2. Segundo objetivo específico.
+3. Terceiro objetivo específico.
+
+
+## Justificativa {#sec-justificativa}
+
+Explique por que o problema de pesquisa é relevante e destaque a contribuição
+esperada do projeto para a literatura, para as organizações e para a sociedade,
+quando for o caso.
 
 
 
+# Revisão da Literatura {#sec-revisao}
 
+Apresente aqui a literatura central que fundamenta o projeto.
 
-# Justificativa {#sec-justificativa}
+Use subseções para organizar os principais conceitos, modelos teóricos e
+evidências empíricas relacionadas ao tema.
 
-Segunda seção a ser escrita.
-
-
-
-# Objetivos {#sec-objetivos}
-
-Terceira seção a ser escrita.
-
-
-## Objetivo Geral {#sec-objgeral}
-
-
-## Objetivos Específicos {#sec-objespecficos}
-
-
-
-
-
-# Revisão de Literatura {#sec-revisao}
-
-Primeira seção a ser escrita.
-
-Exemplo de citação: @cruz_gonzalez_2017
-
-
+Exemplo de citação: @cruz_gonzalez_2017.
 
 
 
 # Metodologia {#sec-metodologia}
 
-Quarta seção a ser escrita
+Descreva com clareza como a pesquisa será executada.
 
 
-## Dados
+## Delineamento da pesquisa {#sec-delineamento}
 
-Descrição precisa dos dados que serão utilizados...
-
-
+Informe a natureza da pesquisa, a abordagem metodológica e o tipo de estudo.
 
 
+## Unidade de análise, dados e fontes de informação {#sec-dados}
 
-# Resultados Esperados {#sec-esperados}
+Descreva a unidade de análise, os dados que serão utilizados e as fontes de
+informação.
 
-Quinta seção a ser escrita.
+
+## Procedimentos de coleta e organização dos dados {#sec-coleta}
+
+Explique como os dados serão obtidos, organizados e preparados para a análise.
+
+
+## Procedimentos de análise {#sec-analise}
+
+Explique como os dados serão analisados e justifique a adequação dos
+procedimentos escolhidos.
+
+
+## Aspectos éticos {#sec-etica}
+
+Se a pesquisa envolver questões éticas, participantes humanos ou dados
+sensíveis, descreva aqui como esses aspectos serão tratados. Se isso não se
+aplicar ao projeto, deixe uma frase curta informando essa condição.
+
+
+## Recursos necessários {#sec-recursos}
+
+Descreva apenas os recursos essenciais para a execução da pesquisa, como bases
+de dados, softwares, acesso institucional, equipamentos ou apoio organizacional.
+Se não houver necessidade de destaque, mantenha esta subseção bem breve.
+
+
+
+# Resultados Esperados e Contribuições {#sec-esperados}
+
+Apresente aqui o que se espera obter ao final da pesquisa.
+
+
+## Contribuições científicas e acadêmicas {#sec-contrib-cientificas}
+
+Indique quais avanços teóricos, empíricos ou metodológicos o estudo pode gerar.
+
+
+## Contribuições técnicas ou tecnológicas {#sec-contrib-tecnicas}
+
+Explique quais aplicações práticas, processos, ferramentas, relatórios,
+recomendações gerenciais ou outros produtos técnicos podem resultar da pesquisa.
+
+
+## Produto bibliográfico ou técnico esperado {#sec-produtos}
+
+Descreva, de forma objetiva, qual produto bibliográfico e qual produto técnico
+ou tecnológico o projeto pode gerar, quando isso fizer sentido para o trabalho.
 
 
 
 # Cronograma {#sec-cronograma}
 
-Sexta seção a ser criada, basta editar o código com as tarefas 
-e datas iniciais e finais no código do gráfio a seguir.
+Substitua a tabela abaixo pelas etapas reais do seu projeto.
+
+| Etapa | Início | Fim |
+|---|---|---|
+| Revisão da literatura | ago./2026 | out./2026 |
+| Definição final da base ou campo de pesquisa | set./2026 | nov./2026 |
+| Coleta e organização dos dados | nov./2026 | jan./2027 |
+| Análise dos dados | fev./2027 | abr./2027 |
+| Redação dos resultados | abr./2027 | jun./2027 |
+| Ajustes finais e preparação da defesa | jul./2027 | ago./2027 |
 
 
-```{r}
-#| label: fig-cronograma
-#| fig-cap: "Cronograma das etapas para execução do projeto."
-#| fig-align: center
-#| fig-width: 8
-#| fig-height: 3.8
-#| out-width: 100%
 
-# pacotes necessarios
-library(tidyverse)
-library(ggplot2)
+# Considerações Finais do Projeto {#sec-consideracoes}
 
-# tarefas individuais e prazos salvos em uma data frame
-tasks <- data.frame(
-  Task = c(
-    "Coleta dos Dados",
-    "Análise dos Dados",
-    "Redação",
-    "Submissão ao Orientador",
-    "Revisão Final"
-  ),
-  StartDate = as.Date(
-    c(
-      "2025-07-01",     # Coleta começa em julho/2025
-      "2025-09-01",     # Análise começa em setembro/2025
-      "2025-10-15",     # Redação começa em outubro/2025
-      "2025-11-15",     # Submissão começa em novembro/2025
-      "2026-01-15"      # Revisão Final começa em janeiro/2026
-    )
-  ),
-  EndDate = as.Date(
-    c(
-      "2025-08-31",     # Coleta termina em agosto/2025
-      "2025-12-31",     # Análise termina em dezembro/2025
-      "2026-01-31",     # Redação termina em janeiro/2026
-      "2026-02-28",     # Submissão termina em fevereiro/2026
-      "2026-03-31"      # Revisão termina em março/2026
-    )
-  )
-)
-
-# Calcula a duração total do projeto para ajustar as margens
-project_start <- min(tasks$StartDate)
-project_end <- max(tasks$EndDate)
-date_range <- c(project_start - 15, project_end + 15)  # margem de 15 dias
-
-# Cores para as tarefas
-colors <- c("#deecfb", "#bedaf7", "#7ab3ef", "#368ce7", "#1666ba")
-
-# Cria o gráfico
-ggplot(tasks, aes(x = StartDate, xend = EndDate, y = fct_rev(fct_inorder(Task)), yend = Task)) + 
-  # Adiciona linhas verticais para os meses
-  geom_vline(
-    xintercept = seq(as.Date("2025-07-01"), as.Date("2026-04-01"), by = "1 month"), 
-    color = "gray92", linewidth = 0.5
-  ) +
-  
-  # Adiciona as barras com tamanho reduzido
-  geom_segment(linewidth = 10, color = colors, lineend = "round") +
-  
-  # Melhora as escalas do eixo X
-  scale_x_date(
-    limits = date_range,
-    date_breaks = "1 month",
-    date_labels = "%b\n%Y", 
-    expand = c(0, 0)
-  ) +
-  
-  # Configura títulos
-  labs(
-    title = NULL,
-    x = NULL,
-    y = NULL
-  ) + 
-  
-  # Personaliza o tema
-  theme_minimal() + 
-  theme(
-    legend.position = "none",
-    panel.grid.major.x = element_blank(),
-    panel.grid.minor = element_blank(),
-    panel.grid.major.y = element_line(color = "gray95"),
-    axis.text.x = element_text(size = 8),
-    axis.text.y = element_text(size = 9, margin = margin(r = 10)),
-    plot.margin = margin(t = 20, r = 15, b = 10, l = 10)
-  )
-```
-
-
+Retome, em um parágrafo breve, a relevância do projeto, sua viabilidade e sua
+aderência à linha de pesquisa do mestrado.
 
 
 
@@ -205,4 +249,15 @@ ggplot(tasks, aes(x = StartDate, xend = EndDate, y = fct_rev(fct_inorder(Task)),
 
 
 
+<!--
+Pós-textuais opcionais:
 
+\appendix
+
+# Título do Apêndice
+
+Se necessário, descomente esta seção para apresentar materiais complementares
+produzidos pelo autor.
+
+Se não houver apêndice, mantenha este bloco comentado.
+-->

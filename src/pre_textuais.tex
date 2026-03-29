@@ -1,92 +1,139 @@
+% ==========================
+% pre_textuais.tex
+% Camada LaTeX reutilizavel do template de qualificacao.
+% ==========================
 
-\thispagestyle{empty}
+\usepackage{titlesec}
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+\usepackage{fancyhdr}
+\usepackage{setspace}
 
-\begin{center}
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+
+\AddToHook{begindocument/end}{%
+  \renewcommand{\contentsname}{Sumário}%
+  \renewcommand{\listfigurename}{Lista de Figuras}%
+  \renewcommand{\listtablename}{Lista de Tabelas}%
+}
+
+\titleformat{\chapter}[hang]
+  {\normalfont\huge\bfseries}
+  {\thechapter}
+  {1em}
+  {}
+
+\titleformat{name=\chapter,numberless}[block]
+  {\normalfont\huge\bfseries\centering}
+  {}
+  {0pt}
+  {}
+
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+
+\fancypagestyle{textualexamequalificacao}{%
+  \fancyhf{}
+  \fancyhead[R]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyhead[R]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\newcommand{\imprimirSubtituloNaCapaSeInformado}{%
+  \ifdefempty{\SubtituloExameQualificacao}{}{\\[0.5cm]\normalsize \SubtituloExameQualificacao}%
+}
+
+\newcommand{\imprimirSubtituloNaFolhaDeRostoSeInformado}{%
+  \ifdefempty{\SubtituloExameQualificacao}{}{\\[0.5cm]\normalsize \SubtituloExameQualificacao}%
+}
+
+\newcommand{\imprimirCoorientadorSeInformado}{%
+  \ifdefempty{\CoorientadorExameQualificacao}{}{Coorientador(a): \CoorientadorExameQualificacao\\}%
+}
+
+\newcommand{\capaExameQualificacao}{%
+  \begin{titlepage}
+  \thispagestyle{empty}
+  \begin{center}
     \small
-    \sc Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais \\ 
-    \sc Campus Formiga \\
-    \sc Mestrado Profissional em Administração
-    
-   
-    \vspace{3cm}
-    \large {SEU NOM}E
-    
-    \vspace{3cm}
-     \large \textbf{TÍTULO} \\
-    Subtítulo
-    
-    \vspace{2cm}
+    \textbf{\InstituicaoExameQualificacao}\\
+    \textbf{\CampusExameQualificacao}\\
+    \textbf{\ProgramaExameQualificacao}
+
+    \vspace*{4cm}
+    \normalsize \textbf{\NomeAutorExameQualificacao}
+
+    \vspace*{5cm}
+    \large \textbf{\MakeUppercase{\TituloExameQualificacao}}
+    \imprimirSubtituloNaCapaSeInformado
+
+    \vfill
+    \normalsize \textbf{\CidadeExameQualificacao, \EstadoExameQualificacao}\\
+    \textbf{\AnoExameQualificacao}
+  \end{center}
+  \end{titlepage}
+}
+
+\newcommand{\folhaDeRostoExameQualificacao}{%
+  \begin{titlepage}
+  \thispagestyle{empty}
+  \begin{center}
+    \vspace*{2cm}
+    \normalsize \textbf{\MakeUppercase{\NomeAutorExameQualificacao}}
+
+    \vspace*{4cm}
+    \large \textbf{\TituloExameQualificacao}
+    \imprimirSubtituloNaFolhaDeRostoSeInformado
+
+    \vspace*{2cm}
     \begin{flushright}
     \begin{minipage}{0.6\textwidth}
     \small
-    Projeto apresentado ao Programa de Pós-
-    Graduação em Administração do Instituto
-    Federal de Educação, Ciência e
-    Tecnologia de Minas Gerais - \textit{Campus} Formiga 
-    (IFMG - \textit{Campus} Formiga), como requisito para 
-    o Exame de Qualificação do Mestrado Profissional em 
-    Administração.
+    \justifying
+    \TextoApresentacaoExameQualificacao
     \end{minipage}
     \end{flushright}
-    
-    \vspace{0.5cm}
+
+    \vspace{0.8cm}
     \begin{flushright}
     \small
-    Orientador: Prof. Dr Nome Completo.\\
-    Coorientador: Prof. Dr. Nome Completo (se houver).
-    
-    \vspace{0.5cm}
-    Linha de Pesquisa: Finanças Corporativas e Investimentos.
+    Orientador(a): \OrientadorExameQualificacao\\
+    \imprimirCoorientadorSeInformado
+    Linha de pesquisa: \LinhaPesquisaExameQualificacao
     \end{flushright}
-    
+
     \vfill
-    Formiga, Minas Gerais \\
-    2025
-\end{center}
+    \CidadeExameQualificacao, \EstadoExameQualificacao\\
+    \AnoExameQualificacao
+  \end{center}
+  \end{titlepage}
+}
 
-
-\newpage
-
-\thispagestyle{empty}
-
-\newenvironment{meuresumo}{
+\newcommand{\inserirListaDeFigurasExameQualificacao}{%
   \clearpage
-  \small
-  \vspace{-1cm}
-  \begin{center}
-    \bfseries RESUMO
-    \vspace{0.5em}
-  \end{center}
-  \begin{quote}
-}{
-  \end{quote}
-  \vspace{-1.1em}
-  \begin{center}
-  \begin{minipage}{0.87\textwidth} 
-  \textbf{Palavras-chave:} palavra 1, palavra 2, palavra 3.
-  \end{minipage}
-  \end{center}
+  \listoffigures
+  \thispagestyle{empty}
   \clearpage
 }
 
-\begin{meuresumo}
-ESCREVA AQUI O RESUMO
-\end{meuresumo}
+\newcommand{\inserirListaDeTabelasExameQualificacao}{%
+  \clearpage
+  \listoftables
+  \thispagestyle{empty}
+  \clearpage
+}
 
-
-
-
-% formatação do título de cada seção
-\makeatletter
-\def\@makechapterhead#1{%
-  \vspace*{50\p@}%
-  {\parindent \z@ \raggedright \normalfont
-    \ifnum \c@secnumdepth >\m@ne
-      \huge\bfseries \thechapter\space
-    \fi
-    \huge \bfseries #1\par\nobreak
-    \vskip 40\p@
-  }}
-\makeatother
-
-
+\newcommand{\inserirSumarioExameQualificacao}{%
+  \clearpage
+  \setcounter{tocdepth}{2}
+  \tableofcontents
+  \thispagestyle{empty}
+  \clearpage
+}
