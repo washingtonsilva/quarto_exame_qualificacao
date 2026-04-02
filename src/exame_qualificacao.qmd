@@ -180,14 +180,6 @@ Substitua a tabela abaixo pelo cronograma do seu projeto.
 
 
 
-# Considerações Finais {#sec-consideracoes}
-
-Escreva aqui as considerações finais do projeto.
-
-
-
-
-
 # Referências {#sec-referencias .unnumbered}
 
 ::: {#refs}
