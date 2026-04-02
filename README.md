@@ -92,6 +92,7 @@ Revise principalmente:
 - orientador;
 - coorientador, se houver;
 - linha de pesquisa;
+- palavras-chave;
 - texto de apresentação na folha de rosto.
 
 Regra importante:
@@ -118,13 +119,14 @@ ao projeto de pesquisa segundo a **ABNT** e ao processo de qualificação do
 
 Sequência principal:
 
-1. Introdução
-2. Revisão da Literatura
-3. Metodologia
-4. Resultados esperados e contribuições
-5. Cronograma
-6. Considerações finais do projeto
-7. Referências
+1. Resumo com palavras-chave
+2. Introdução
+3. Revisão da Literatura
+4. Metodologia
+5. Resultados esperados e contribuições
+6. Cronograma
+7. Considerações finais do projeto
+8. Referências
 
 Na estrutura atual do template, a seção **Introdução** contém as seguintes
 subseções:
@@ -137,6 +139,8 @@ subseções:
 
 Importante:
 
+- o **Resumo** com palavras-chave foi mantido como elemento obrigatório do
+  template, por opção pedagógica do orientador;
 - os objetivos agora ficam dentro da **Introdução**, e não mais como capítulo
   independente;
 - a seção de cronograma foi simplificada para uma tabela em Markdown, sem
@@ -150,6 +154,8 @@ Importante:
 
 No arquivo `src/exame_qualificacao.qmd`, o aluno deve:
 
+- escrever o resumo em texto corrido e revisar as palavras-chave no bloco de
+  dados editáveis;
 - escrever o texto principal nas seções já criadas;
 - apagar subseções que não se aplicarem ao projeto, como hipóteses ou aspectos
   éticos, quando for o caso;
@@ -165,7 +171,8 @@ No **RStudio**, clique em `Render`, ou use no terminal:
 quarto render src/exame_qualificacao.qmd
 ```
 
-O PDF será gerado na pasta `src/` e não deve ser enviado ao repositório.
+O PDF será gerado na pasta `src/`. Esse arquivo é gerado automaticamente e não
+faz parte do conteúdo versionado do repositório.
 
 
 ## Dicas de Uso

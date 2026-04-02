@@ -58,6 +58,32 @@
   \ifdefempty{\CoorientadorExameQualificacao}{}{Coorientador(a): \CoorientadorExameQualificacao\\}%
 }
 
+\newenvironment{resumoExameQualificacao}{
+  \clearpage
+  \begingroup
+  \thispagestyle{empty}
+  \singlespacing
+  \small
+  \vspace*{-1cm}
+  \begin{center}
+    \bfseries RESUMO
+
+    \vspace{0.5em}
+  \end{center}
+  \begin{quote}
+  \justifying
+}{
+  \end{quote}
+  \vspace{-1.1em}
+  \begin{center}
+  \begin{minipage}{0.87\textwidth}
+  \textbf{Palavras-chave:} \PalavrasChaveExameQualificacao
+  \end{minipage}
+  \end{center}
+  \clearpage
+  \endgroup
+}
+
 \newcommand{\capaExameQualificacao}{%
   \begin{titlepage}
   \thispagestyle{empty}

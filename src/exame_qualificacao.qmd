@@ -33,6 +33,7 @@ format:
           \newcommand{\OrientadorExameQualificacao}{Prof. Dr. Nome Completo do Orientador}
           \newcommand{\CoorientadorExameQualificacao}{}
           \newcommand{\LinhaPesquisaExameQualificacao}{Finanças Corporativas e Investimentos}
+          \newcommand{\PalavrasChaveExameQualificacao}{palavra-chave 1; palavra-chave 2; palavra-chave 3.}
           \newcommand{\TextoApresentacaoExameQualificacao}{Projeto de pesquisa apresentado ao Programa de Pós-Graduação em Administração do Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais (IFMG) -- Campus Formiga, como requisito para o Exame de Qualificação do Mestrado Profissional em Administração.}
     documentclass: report
     papersize: a4
@@ -78,6 +79,12 @@ Na maior parte do tempo, você precisará alterar apenas este arquivo.
 
 \folhaDeRostoExameQualificacao
 
+\begin{resumoExameQualificacao}
+
+Escreva aqui o resumo do projeto.
+
+\end{resumoExameQualificacao}
+
 <!--
 Listas opcionais.
 Descomente as linhas abaixo apenas se houver figuras ou tabelas no projeto.
@@ -98,131 +105,67 @@ Descomente as linhas abaixo apenas se houver figuras ou tabelas no projeto.
 
 <!--
 Escreva abaixo o texto do projeto de pesquisa.
-A sequência proposta busca manter o template aderente à NBR 15287 e ao
-processo de qualificação do PPGA, sem exigir complexidades extras.
 -->
 
 
 
 # Introdução {#sec-introducao}
 
-Apresente o tema do projeto, o contexto em que o problema surge e a relevância
-geral da pesquisa.
 
 
 ## Problema de pesquisa {#sec-problema}
 
-Formule de maneira clara a pergunta que a pesquisa pretende responder.
-
-
-## Hipóteses ou pressupostos {#sec-hipoteses}
-
-Se a sua pesquisa não trabalhar com hipóteses ou pressupostos, apague esta
-subseção inteira, incluindo o título.
 
 
 ## Objetivo geral {#sec-objgeral}
 
-Declare aqui o objetivo geral do projeto.
 
 
 ## Objetivos específicos {#sec-objespecificos}
 
-Liste aqui os objetivos específicos que viabilizam o alcance do objetivo geral.
-Se desejar, escreva cada objetivo iniciando com um verbo no infinitivo.
 
-1. Primeiro objetivo específico.
-2. Segundo objetivo específico.
-3. Terceiro objetivo específico.
 
 
 ## Justificativa {#sec-justificativa}
 
-Explique por que o problema de pesquisa é relevante e destaque a contribuição
-esperada do projeto para a literatura, para as organizações e para a sociedade,
-quando for o caso.
+
 
 
 
 # Revisão da Literatura {#sec-revisao}
 
-Apresente aqui a literatura central que fundamenta o projeto.
 
-Use subseções para organizar os principais conceitos, modelos teóricos e
-evidências empíricas relacionadas ao tema.
-
-Exemplo de citação: @cruz_gonzalez_2017.
 
 
 
 # Metodologia {#sec-metodologia}
 
-Descreva com clareza como a pesquisa será executada.
-
-
-## Delineamento da pesquisa {#sec-delineamento}
-
-Informe a natureza da pesquisa, a abordagem metodológica e o tipo de estudo.
-
-
-## Unidade de análise, dados e fontes de informação {#sec-dados}
-
-Descreva a unidade de análise, os dados que serão utilizados e as fontes de
-informação.
-
-
-## Procedimentos de coleta e organização dos dados {#sec-coleta}
-
-Explique como os dados serão obtidos, organizados e preparados para a análise.
-
-
-## Procedimentos de análise {#sec-analise}
-
-Explique como os dados serão analisados e justifique a adequação dos
-procedimentos escolhidos.
-
-
-## Aspectos éticos {#sec-etica}
-
-Se a pesquisa envolver questões éticas, participantes humanos ou dados
-sensíveis, descreva aqui como esses aspectos serão tratados. Se isso não se
-aplicar ao projeto, deixe uma frase curta informando essa condição.
-
-
-## Recursos necessários {#sec-recursos}
-
-Descreva apenas os recursos essenciais para a execução da pesquisa, como bases
-de dados, softwares, acesso institucional, equipamentos ou apoio organizacional.
-Se não houver necessidade de destaque, mantenha esta subseção bem breve.
 
 
 
-# Resultados Esperados e Contribuições {#sec-esperados}
 
-Apresente aqui o que se espera obter ao final da pesquisa.
-
-
-## Contribuições científicas e acadêmicas {#sec-contrib-cientificas}
-
-Indique quais avanços teóricos, empíricos ou metodológicos o estudo pode gerar.
+# Resultados Esperados {#sec-esperados}
 
 
-## Contribuições técnicas ou tecnológicas {#sec-contrib-tecnicas}
 
-Explique quais aplicações práticas, processos, ferramentas, relatórios,
-recomendações gerenciais ou outros produtos técnicos podem resultar da pesquisa.
+## Produto bibliográfico {#sec-artigo}
 
 
-## Produto bibliográfico ou técnico esperado {#sec-produtos}
 
-Descreva, de forma objetiva, qual produto bibliográfico e qual produto técnico
-ou tecnológico o projeto pode gerar, quando isso fizer sentido para o trabalho.
+## Produto Técnico/Tecnológico {#sec-tecnico}
+
+
+
+## Impacots Esperados {#sec-impactos}
+
+
+
 
 
 
 # Cronograma {#sec-cronograma}
 
-Substitua a tabela abaixo pelas etapas reais do seu projeto.
+Substitua a tabela abaixo pelo cronograma do seu projeto.
 
 | Etapa | Início | Fim |
 |---|---|---|
@@ -235,10 +178,13 @@ Substitua a tabela abaixo pelas etapas reais do seu projeto.
 
 
 
-# Considerações Finais do Projeto {#sec-consideracoes}
 
-Retome, em um parágrafo breve, a relevância do projeto, sua viabilidade e sua
-aderência à linha de pesquisa do mestrado.
+
+# Considerações Finais {#sec-consideracoes}
+
+Escreva aqui as considerações finais do projeto.
+
+
 
 
 
