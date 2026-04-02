@@ -4,24 +4,34 @@ Template **Quarto** para a elaboração do projeto de pesquisa submetido ao
 **Exame de Qualificação** do
 [Mestrado Profissional em Administração do IFMG - Campus Formiga](https://www.formiga.ifmg.edu.br/mestrado-profissional-em-administracao).
 
-Este repositório disponibiliza apenas os arquivos-fonte do documento. O PDF
-final é gerado localmente e não deve ser versionado com **Git/GitHub**.
 
 
 ## Antes de Começar
 
-Este template assume que você já tem instalados:
+1. Esse template assume que você tem instalados;
 
 - **Quarto**
 - **TinyTeX**
-- **RStudio**, **VS Code** ou editor equivalente
+- **RStudio**, **VS Code** ou outro IDE de sua preferência,
 - **R** apenas se for usar código no documento
 
-Se quiser verificar o ambiente, execute:
+Se quiser verificar o ambiente quarto, digite no terminal
+Git Bash ou Powershell (Windows): 
 
 ```bash
 quarto check
 ```
+
+2. **Recomendo fortemente** que você atualize as versões dos 
+seguintes softwares:
+
+- Quarto
+- RStudio
+
+e também a versão de R, caso for necessário.
+
+
+
 
 
 ## Como Criar seu Repositório a partir deste Template
@@ -56,12 +66,7 @@ A renderização criará o arquivo `src/exame_qualificacao.pdf`. Esse **PDF** n�
 é versionado no **Git**, pois é gerado automaticamente a partir do arquivo-fonte
 do projeto.
 
-Observações:
 
-- ao clonar pelo **RStudio**, o próprio **RStudio** criará automaticamente o
-  arquivo de projeto `.Rproj` com o nome do repositório local;
-- esse arquivo `.Rproj` é apenas local e não faz parte do conteúdo versionado
-  do template.
 
 
 ## Estrutura do Projeto
@@ -73,10 +78,11 @@ Os principais arquivos são:
 - `src/referencias.bib`: arquivo da bibliografia;
 - `src/associacao-brasileira-de-normas-tecnicas-ipea.csl`: estilo de citações e referências.
 
-Na maior parte do tempo, você precisará editar apenas
-`src/exame_qualificacao.qmd`.
+Salvo em raras situações, você deve editar apenas o arquivo `src/exame_qualificacao.qmd`.
 
 Não altere `src/pre_textuais.tex`, salvo orientação expressa do orientador.
+
+
 
 
 ## O que Editar Primeiro
@@ -87,7 +93,7 @@ Abra `src/exame_qualificacao.qmd` e revise primeiro o bloco
 Revise principalmente:
 
 - nome do discente;
-- título e subtítulo, se houver;
+- título e subtítulo (mesmo que provisórios);
 - cidade, estado e ano;
 - orientador;
 - coorientador, se houver;
@@ -111,11 +117,12 @@ Regras práticas:
   realmente houver figuras ou tabelas no texto.
 
 
+
 ## Estrutura Lógica do Documento
 
 A estrutura textual atual do template foi reorganizada para ficar mais aderente
 ao projeto de pesquisa segundo a **ABNT** e ao processo de qualificação do
-**PPGA**.
+**PPGA/IFMG**.
 
 Sequência principal:
 
@@ -132,35 +139,28 @@ Na estrutura atual do template, a seção **Introdução** contém as seguintes
 subseções:
 
 - problema de pesquisa;
-- hipóteses ou pressupostos, se couber;
 - objetivo geral;
 - objetivos específicos;
 - justificativa.
 
-Importante:
-
-- o **Resumo** com palavras-chave foi mantido como elemento obrigatório do
-  template, por opção pedagógica do orientador;
-- os objetivos agora ficam dentro da **Introdução**, e não mais como capítulo
-  independente;
-- a seção de cronograma foi simplificada para uma tabela em Markdown, sem
-  necessidade de editar código em **R**;
-- os elementos pré-textuais passaram a ser controlados internamente pelo
-  template, de modo que o orientando normalmente só precisa editar os campos do
-  topo do arquivo principal.
 
 
 ## Como Escrever o Texto
 
 No arquivo `src/exame_qualificacao.qmd`, o aluno deve:
 
-- escrever o resumo em texto corrido e revisar as palavras-chave no bloco de
-  dados editáveis;
+- incluir as referências bibliográficas em `src/referencias.bib`.
+
 - escrever o texto principal nas seções já criadas;
+
 - apagar subseções que não se aplicarem ao projeto, como hipóteses ou aspectos
   éticos, quando for o caso;
+
 - substituir a tabela de cronograma pelas etapas reais da pesquisa;
-- incluir as referências bibliográficas em `src/referencias.bib`.
+
+- ao final, escrever o resumo em texto corrido e revisar as palavras-chave no bloco de
+  dados editáveis;
+
 
 
 ## Gerando o PDF
@@ -171,11 +171,11 @@ No **RStudio**, clique em `Render`, ou use no terminal:
 quarto render src/exame_qualificacao.qmd
 ```
 
-O PDF será gerado na pasta `src/`. Esse arquivo é gerado automaticamente e não
-faz parte do conteúdo versionado do repositório.
+O PDF será gerado na pasta `src/`.
 
 
-## Dicas de Uso
+
+## Dicas de Escrita com Quarto
 
 - citações: `@sobrenome2023`
 - seções: `#`, `##`, `###`
@@ -183,8 +183,9 @@ faz parte do conteúdo versionado do repositório.
 - referência cruzada: `{#sec-id}` e `@sec-id`
 
 
+
 ## Suporte
 
 - Documentação do Quarto: <https://quarto.org/docs/guide/>
-- Orientações do orientador
+- Instruções do orientador
 - Abertura de issue neste repositório, se necessário
