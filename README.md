@@ -1,7 +1,7 @@
 # Template para Exame de Qualificação
 
 Template **Quarto** para a elaboração dos projetos de pesquisa de meus 
-orientandos submetidos ao **Exame de Qualificação** do 
+orientandos que serão submetidos ao **Exame de Qualificação** do 
 [Mestrado Profissional em Administração do IFMG - Campus Formiga](https://www.formiga.ifmg.edu.br/mestrado-profissional-em-administracao).
 
 
