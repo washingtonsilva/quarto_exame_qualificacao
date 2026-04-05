@@ -91,22 +91,25 @@ os arquivos-fonte usados para gerar o PDF do projeto.
 
 Os principais arquivos dessa pasta são:
 
-- `src/exame_qualificacao.qmd`: arquivo principal do projeto e principal 
-arquivo a ser editado;
-
-- `src/pre_textuais.tex`: arquivo auxiliar com a configuração dos elementos 
-pré-textuais;
-
+- `src/exame_qualificacao.qmd`: arquivo principal do projeto e principal
+  arquivo a ser editado;
+- `src/pre_textuais.tex`: arquivo auxiliar com a configuração dos elementos
+  pré-textuais;
 - `src/referencias.bib`: arquivo da bibliografia;
+- `src/associacao-brasileira-de-normas-tecnicas-ipea.csl`: arquivo de estilo
+  das citações e referências.
 
-- `src/associacao-brasileira-de-normas-tecnicas-ipea.csl`: arquivo de estilo das 
-citações e referências.
+O repositório também contém o arquivo `.gitignore`, que controla quais
+arquivos devem ser ignorados pelo Git. Em geral, ele evita o versionamento
+de arquivos temporários, arquivos de sistema, arquivos auxiliares do RStudio
+e arquivos de saída gerados automaticamente.
 
 Salvo em raras situações, você deverá editar apenas o arquivo
 `src/exame_qualificacao.qmd` e atualizar o arquivo `src/referencias.bib`
 quando necessário.
 
-Não altere `src/pre_textuais.tex`, salvo orientação expressa do orientador.
+Não altere `src/pre_textuais.tex` nem o arquivo `.gitignore`, salvo
+orientação expressa do orientador.
 
 
 
