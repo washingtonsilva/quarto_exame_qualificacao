@@ -6,7 +6,7 @@ orientandos que serão submetidos ao **Exame de Qualificação** do
 
 
 
-## Antes de Começar
+## Antes de começar
 
 1. Para usar este template, é necessário que você tenha instalados:
 
@@ -32,7 +32,7 @@ e também a versão de R e dos pacotes usados, caso seja necessário.
 
 
 
-## Como Criar seu Repositório a partir deste Template?
+## Como criar seu repositório a partir deste template e cloná-lo?
 
 Este projeto foi publicado no **GitHub** como um **template**.
 
@@ -84,7 +84,7 @@ escrita do projeto.
 
 
 
-## Estrutura do Projeto
+## Estrutura do projeto
 
 Os arquivos mais importantes do template estão na pasta `src/`, que contém
 os arquivos-fonte usados para gerar o PDF do projeto.
@@ -113,7 +113,7 @@ orientação expressa do orientador.
 
 
 
-## O que Editar Primeiro?
+## O que editar primeiro?
 
 Abra `src/exame_qualificacao.qmd` e revise primeiro o bloco
 `DADOS EDITÁVEIS DO EXAME`, no topo do arquivo.
@@ -146,7 +146,7 @@ Revise principalmente:
 
 
 
-## Estrutura Lógica do Documento
+## Estrutura lógica do documento
 
 A estrutura lógica do template foi reorganizada para ficar mais aderente
 ao formato de projeto de pesquisa, às normas da **ABNT** e ao processo de
