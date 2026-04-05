@@ -135,7 +135,6 @@ Escreva abaixo o texto do projeto de pesquisa.
 # Revisão da Literatura {#sec-revisao}
 
 
-
 ## Lacuna de Pesquisa {#sec-lacuna}
 
 

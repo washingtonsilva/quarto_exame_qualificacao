@@ -1,36 +1,34 @@
 # Template para Exame de Qualificação
 
-Template **Quarto** para a elaboração do projeto de pesquisa submetido ao
-**Exame de Qualificação** do
+Template **Quarto** para a elaboração dos projetos de pesquisa de meus 
+orientandos submetidos ao **Exame de Qualificação** do 
 [Mestrado Profissional em Administração do IFMG - Campus Formiga](https://www.formiga.ifmg.edu.br/mestrado-profissional-em-administracao).
 
 
 
 ## Antes de Começar
 
-1. Esse template assume que você tem instalados;
+1. Para usar este template, é necessário que você tenha instalados:
 
 - **Quarto**
 - **TinyTeX**
-- **RStudio**, **VS Code** ou outro IDE de sua preferência,
-- **R** apenas se for usar código no documento
+- **RStudio** (ou outro IDE de sua preferência)
+- **R** (apenas se for usar código no documento)
 
-Se quiser verificar o ambiente quarto, digite no terminal
-Git Bash ou Powershell (Windows): 
+Se quiser verificar o ambiente do sistema Quarto, digite no terminal
+Git Bash ou Windows PowerShell: 
 
 ```bash
 quarto check
 ```
 
-2. **Recomendo fortemente** que você atualize as versões dos 
-seguintes softwares:
+2. **Recomendo fortemente** que você **atualize** as versões dos 
+seguintes softwares antes de começar a usar o template:
 
-- Quarto
-- RStudio
+- **RStudio**
+- **Quarto**
 
-e também a versão de R, caso for necessário.
-
-
+e também a versão de R e dos pacotes usados, caso seja necessário.
 
 
 
@@ -68,20 +66,47 @@ do projeto.
 
 
 
+## Uso do README.md após criar sua cópia do template
+
+Após criar seu repositório a partir deste template e cloná-lo para seu
+computador, recomenda-se adaptar o arquivo `README.md` para que ele passe a
+documentar a evolução do seu projeto de pesquisa.
+
+Inicialmente, este arquivo funciona como um guia de uso do template. Com o
+avanço do trabalho, porém, ele pode ser reescrito gradualmente para registrar
+informações específicas do projeto, como título provisório, objetivo geral,
+decisões de estrutura, pendências, reuniões de orientação e principais
+alterações realizadas.
+
+Assim, o `README.md` deixa de ser apenas uma instrução inicial de uso do
+template e passa a funcionar também como um registro da evolução da
+escrita do projeto.
+
+
 
 ## Estrutura do Projeto
 
-Os principais arquivos são:
+Os arquivos mais importantes do template estão na pasta `src/`, que contém
+os arquivos-fonte usados para gerar o PDF do projeto.
 
-- `src/exame_qualificacao.qmd`: arquivo principal do projeto;
-- `src/pre_textuais.tex`: camada LaTeX reutilizável dos elementos pré-textuais;
+Os principais arquivos dessa pasta são:
+
+- `src/exame_qualificacao.qmd`: arquivo principal do projeto e principal 
+arquivo a ser editado;
+
+- `src/pre_textuais.tex`: arquivo auxiliar com a configuração dos elementos 
+pré-textuais;
+
 - `src/referencias.bib`: arquivo da bibliografia;
-- `src/associacao-brasileira-de-normas-tecnicas-ipea.csl`: estilo de citações e referências.
 
-Salvo em raras situações, você deve editar apenas o arquivo `src/exame_qualificacao.qmd`.
+- `src/associacao-brasileira-de-normas-tecnicas-ipea.csl`: arquivo de estilo das 
+citações e referências.
+
+Salvo em raras situações, você deverá editar apenas o arquivo
+`src/exame_qualificacao.qmd` e atualizar o arquivo `src/referencias.bib`
+quando necessário.
 
 Não altere `src/pre_textuais.tex`, salvo orientação expressa do orientador.
-
 
 
 
@@ -101,12 +126,12 @@ Revise principalmente:
 - palavras-chave;
 - texto de apresentação na folha de rosto.
 
-Regra importante:
+**Regra importante:**
 
 - no bloco de dados editáveis, altere apenas o texto entre chaves `{}` e não
   mude o nome dos comandos.
 
-Regras práticas:
+**Regras práticas:**
 
 - se não houver subtítulo, deixe `\\SubtituloExameQualificacao{}` vazio;
 - se não houver coorientador, deixe `\\CoorientadorExameQualificacao{}` vazio;
@@ -120,46 +145,42 @@ Regras práticas:
 
 ## Estrutura Lógica do Documento
 
-A estrutura textual atual do template foi reorganizada para ficar mais aderente
-ao projeto de pesquisa segundo a **ABNT** e ao processo de qualificação do
-**PPGA/IFMG**.
+A estrutura lógica do template foi reorganizada para ficar mais aderente
+ao formato de projeto de pesquisa, às normas da **ABNT** e ao processo de
+qualificação do **PPGA/IFMG**.
 
-Sequência principal:
+A sequência lógica principal do documento é a seguinte:
 
 1. Resumo com palavras-chave
 2. Introdução
+   - Problema de pesquisa
+   - Objetivo Geral
+   - Objetivos Específicos
+   - Justificativa
 3. Revisão da Literatura
+   - Lacuna de Pesquisa
 4. Metodologia
 5. Resultados esperados e contribuições
 6. Cronograma
-7. Considerações finais do projeto
-8. Referências
-
-Na estrutura atual do template, a seção **Introdução** contém as seguintes
-subseções:
-
-- problema de pesquisa;
-- objetivo geral;
-- objetivos específicos;
-- justificativa.
+7. Referências
 
 
 
 ## Como Escrever o Texto
 
-No arquivo `src/exame_qualificacao.qmd`, o aluno deve:
+No arquivo `src/exame_qualificacao.qmd`, você deve:
 
-- incluir as referências bibliográficas em `src/referencias.bib`.
+- incluir as referências bibliográficas em `src/referencias.bib`;
 
 - escrever o texto principal nas seções já criadas;
 
 - apagar subseções que não se aplicarem ao projeto, como hipóteses ou aspectos
   éticos, quando for o caso;
 
-- substituir a tabela de cronograma pelas etapas reais da pesquisa;
+- editar a tabela de cronograma, inserindo as etapas reais planejadas;
 
-- ao final, escrever o resumo em texto corrido e revisar as palavras-chave no bloco de
-  dados editáveis;
+- ao final, escrever o resumo em texto corrido e revisar as palavras-chave
+no bloco de dados editáveis.
 
 
 
@@ -175,17 +196,146 @@ O PDF será gerado na pasta `src/`.
 
 
 
-## Dicas de Escrita com Quarto
+## Referências cruzadas
 
-- citações: `@sobrenome2023`
-- seções: `#`, `##`, `###`
-- imagens: `![Legenda](caminho/para/imagem.png)`
-- referência cruzada: `{#sec-id}` e `@sec-id`
+O sistema **Quarto** permite criar referências cruzadas internas para seções,
+equações, figuras e tabelas. Para isso, cada elemento deve receber um
+identificador e, depois, esse identificador pode ser citado no texto.
+
+### Seções
+
+Para criar uma referência cruzada para uma seção, atribua um identificador
+ao título da seção:
+
+```markdown
+## Metodologia {#sec-metodologia}
+```
+
+Depois, faça a referência no texto com:
+
+```markdown
+Veja a @sec-metodologia.
+```
+
+### Equações
+
+Para criar uma referência cruzada para uma equação em bloco, atribua um 
+identificador ao bloco da equação. 
+
+Recomenda-se usar identificadores iniciados por `eq-`.
+
+Exemplo:
+
+```markdown
+$$
+y = \beta_0 + \beta_1 x + u
+$$ {#eq-regressao-linear}
+```
+
+Depois, faça a referência no texto com:
+
+```markdown
+Veja a @eq-regressao-linear.
+```
+
+Ao renderizar o documento, o **Quarto** numerará a equação
+automaticamente e substituirá a referência pelo número correspondente.
+
+### Figuras inseridas diretamente no texto
+
+Para inserir uma figura diretamente no arquivo `.qmd` e permitir sua
+referência no texto, atribua um identificador à figura. É necessário usar
+identificadores iniciados por `fig-`.
+
+Exemplo:
+
+```markdown
+![Fluxo do processo de pesquisa](figuras/processo.png){#fig-processo}
+```
+
+Depois, faça a referência no texto com:
+
+```markdown
+Como mostra a @fig-processo, o estudo segue várias etapas.
+```
+
+### Figuras geradas por código
+
+Quando a figura é produzida em um bloco de código, o identificador deve
+ser definido nas opções da célula de código. Nesse caso, também é necessário 
+usar identificadores iniciados por `fig-`.
+
+Exemplo com R:
+
+```{r}
+#| label: fig-histograma
+#| fig-cap: "Histograma da variável de interesse"
+
+hist(x)
+```
+
+
+Depois, faça a referência no texto com:
+
+```markdown
+Veja a @fig-histograma.
+```
+
+### Tabelas geradas por código
+
+Para tabelas produzidas programaticamente, o identificador também deve
+ser definido nas opções do chunk. É necessário usar identificadores
+iniciados por `tbl-`.
+
+Exemplo com R:
+
+```{r}
+#| label: tbl-resumo
+#| tbl-cap: "Estatísticas descritivas da amostra"
+
+knitr::kable(head(mtcars))
+```
+
+
+Depois, faça a referência no texto com:
+
+```markdown
+Os principais resultados descritivos estão na @tbl-resumo.
+```
+
+### Convenção recomendada para identificadores
+
+Para as referências cuzuzadas funcionarem é necessário seguir uma 
+convenção de nomenclatura para os identificadores dos elementos 
+referenciado:
+
+- seções: `sec-...`
+- equações: `eq-...`
+- figuras: `fig-...`
+- tabelas: `tbl-...`
+
+Exemplos:
+
+- `sec-metodologia`
+- `eq-capm`
+- `fig-fluxograma`
+- `tbl-estatisticas-descritivas`
+
+
+### Recomendações práticas
+
+- use identificadores curtos, informativos e sem acentos;
+- **não use** espaços e caracteres especiais nos identificadores;
+- **não repita** o mesmo identificador em elementos diferentes;
+- ao criar figuras e tabelas por código, informe também uma legenda
+  (`fig-cap` ou `tbl-cap`);
+- após inserir novos rótulos, renderize novamente o documento para verificar
+  se as referências cruzadas foram resolvidas corretamente.
 
 
 
 ## Suporte
 
-- Documentação do Quarto: <https://quarto.org/docs/guide/>
+- Documentação do sistema Quarto: <https://quarto.org/docs/guide/>
 - Instruções do orientador
-- Abertura de issue neste repositório, se necessário
+- Abertura de issue neste repositório, se necessário.
