@@ -118,10 +118,10 @@ orientação expressa do orientador.
 Abra `src/exame_qualificacao.qmd` e revise primeiro o bloco
 `DADOS EDITÁVEIS DO EXAME`, no topo do arquivo.
 
-Revise principalmente:
+Inicialmente, edite os seguintes campos:
 
 - nome do discente;
-- título e subtítulo (mesmo que provisórios);
+- título e subtítulo se houver (use um título provisório, caso não tenha nenhum);
 - cidade, estado e ano;
 - orientador;
 - coorientador, se houver;
