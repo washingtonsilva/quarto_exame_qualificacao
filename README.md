@@ -169,7 +169,7 @@ A sequência lógica principal do documento é a seguinte:
 
 
 
-## Como Escrever o Texto?
+## Como escrever o texto?
 
 No arquivo `src/exame_qualificacao.qmd`, você deve:
 
