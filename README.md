@@ -58,11 +58,15 @@ Para criar sua cópia:
     **RStudio** fará a clonagem do repositório e abrirá o projeto localmente.
 12. Renderize o arquivo `src/exame_qualificacao.qmd` para verificar se tudo
     está funcionando.
-13. Adicione o orientador como colaborador do repositório no **GitHub**.
+13. Adicione o orientador/coorientador como colaboradores do 
+repositório no **GitHub**.
 
-A renderização criará o arquivo `src/exame_qualificacao.pdf`. Esse **PDF** não
-é versionado no **Git**, pois é gerado automaticamente a partir do arquivo-fonte
-do projeto.
+A renderização criará o arquivo `src/exame_qualificacao.pdf`. 
+
+O arquivo **PDF** não é versionado no **Git**, pois éas boas práticas de Git 
+recomendam  versionar apenas o código fonte, pois os arquivos de saída podem 
+ser gerados pelo código fonte e podem criar conflitos desnecessários no 
+controle de versão.
 
 
 
