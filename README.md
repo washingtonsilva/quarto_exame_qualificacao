@@ -146,24 +146,28 @@ Inicialmente, edite os seguintes campos:
 
 
 
-## Estrutura lógica do documento
+## Estrutura Lógica do Documento
 
 A estrutura lógica do template foi reorganizada para ficar mais aderente
 ao formato de projeto de pesquisa, às normas da **ABNT** e ao processo de
 qualificação do **PPGA/IFMG**.
 
-A sequência lógica principal do documento é a seguinte:
+A estrutura principal do documento é a seguinte:
 
 1. Resumo com palavras-chave
 2. Introdução
-   - Problema de pesquisa
-   - Objetivo Geral
-   - Objetivos Específicos
-   - Justificativa
+   - problema de pesquisa
+   - objetivo geral
+   - objetivos específicos
+   - justificativa
+   - hipóteses (subseção opcional, **insira** quando cabível)
 3. Revisão da Literatura
-   - Lacuna de Pesquisa
+   - lacuna de pesquisa
 4. Metodologia
-5. Resultados esperados e contribuições
+5. Resultados esperados
+   - produto bibliográfico
+   - produto técnico/tecnológico
+   - impactos esperados
 6. Cronograma
 7. Referências
 
@@ -174,16 +178,28 @@ A sequência lógica principal do documento é a seguinte:
 No arquivo `src/exame_qualificacao.qmd`, você deve:
 
 - incluir as referências bibliográficas em `src/referencias.bib`;
-
 - escrever o texto principal nas seções já criadas;
+- editar a tabela de cronograma, inserindo as etapas reais planejadas.
 
-- apagar subseções que não se aplicarem ao projeto, como hipóteses ou aspectos
-  éticos, quando for o caso;
+Embora essa não seja a ordem final de apresentação do texto no documento,
+recomenda-se a seguinte ordem de escrita, por facilitar a evolução gradual
+da redação do projeto:
 
-- editar a tabela de cronograma, inserindo as etapas reais planejadas;
-
-- ao final, escrever o resumo em texto corrido e revisar as palavras-chave
-no bloco de dados editáveis.
+1. Revisão da Literatura
+   1.1 Lacuna de Pesquisa
+2. Problema de pesquisa
+3. Hipóteses (inserir quando cabível)
+4. Objetivo geral e objetivos específicos
+5. Justificativa
+6. Metodologia
+7. Resultados esperados
+   7.1 Produto bibliográfico
+   7.2 Produto técnico/tecnológico
+   7.3 Impactos esperados
+8. Cronograma
+9. Introdução (texto inicial com uma visão geral do projeto)
+10. Resumo e palavras-chave
+11. Revisão do título e subtítulo (se houver) do projeto
 
 
 

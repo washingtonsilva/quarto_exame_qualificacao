@@ -150,8 +150,7 @@ Escreva abaixo o texto do projeto de pesquisa.
 # Resultados Esperados {#sec-esperados}
 
 
-
-## Produto bibliográfico {#sec-artigo}
+## Produto Bibliográfico {#sec-artigo}
 
 
 
@@ -159,7 +158,7 @@ Escreva abaixo o texto do projeto de pesquisa.
 
 
 
-## Impacots Esperados {#sec-impactos}
+## Impactos Esperados {#sec-impactos}
 
 
 
