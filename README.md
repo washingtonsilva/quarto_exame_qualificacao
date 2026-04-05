@@ -32,7 +32,7 @@ e também a versão de R e dos pacotes usados, caso seja necessário.
 
 
 
-## Como Criar seu Repositório a partir deste Template
+## Como Criar seu Repositório a partir deste Template?
 
 Este projeto foi publicado no **GitHub** como um **template**.
 
@@ -113,7 +113,7 @@ orientação expressa do orientador.
 
 
 
-## O que Editar Primeiro
+## O que Editar Primeiro?
 
 Abra `src/exame_qualificacao.qmd` e revise primeiro o bloco
 `DADOS EDITÁVEIS DO EXAME`, no topo do arquivo.
@@ -169,7 +169,7 @@ A sequência lógica principal do documento é a seguinte:
 
 
 
-## Como Escrever o Texto
+## Como Escrever o Texto?
 
 No arquivo `src/exame_qualificacao.qmd`, você deve:
 
