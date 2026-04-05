@@ -63,8 +63,8 @@ repositório no **GitHub**.
 
 A renderização criará o arquivo `src/exame_qualificacao.pdf`. 
 
-O arquivo **PDF** não é versionado no **Git**, pois éas boas práticas de Git 
-recomendam  versionar apenas o código fonte, pois os arquivos de saída podem 
+O arquivo **PDF** não é versionado no **Git**, dado que as boas práticas de Git 
+recomendam versionar apenas o código fonte, porque os arquivos de saída podem 
 ser gerados pelo código fonte e podem criar conflitos desnecessários no 
 controle de versão.
 
