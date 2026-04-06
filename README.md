@@ -188,16 +188,16 @@ recomenda-se a seguinte ordem de escrita, por facilitar a evolução gradual
 da redação do projeto:
 
 1. Revisão da Literatura
-   1.1 Lacuna de Pesquisa
+   - 1.1 Lacuna de Pesquisa
 2. Problema de pesquisa
 3. Hipóteses (inserir quando cabível)
 4. Objetivo geral e objetivos específicos
 5. Justificativa
 6. Metodologia
 7. Resultados esperados
-   7.1 Produto bibliográfico
-   7.2 Produto técnico/tecnológico
-   7.3 Impactos esperados
+   - 7.1 Produto bibliográfico
+   - 7.2 Produto técnico/tecnológico
+   - 7.3 Impactos esperados
 8. Cronograma
 9. Introdução (texto inicial com uma visão geral do projeto)
 10. Resumo e palavras-chave
