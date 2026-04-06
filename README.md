@@ -104,9 +104,7 @@ Os principais arquivos dessa pasta são:
   das citações e referências.
 
 O repositório também contém o arquivo `.gitignore`, que controla quais
-arquivos devem ser ignorados pelo Git. Em geral, ele evita o versionamento
-de arquivos temporários, arquivos de sistema, arquivos auxiliares do RStudio
-e arquivos de saída gerados automaticamente.
+arquivos devem ser ignorados pelo Git.
 
 Salvo em raras situações, você deverá editar apenas o arquivo
 `src/exame_qualificacao.qmd` e atualizar o arquivo `src/referencias.bib`
